@@ -386,7 +386,7 @@ void ToolBox::setLastLocation (juce::File file)
     lastLocation = file;
 
     autoSaveFile.deleteFile();
-    autoSaveFile = lastLocation.getParentDirectory().getNonexistentChildFile (file.getFileNameWithoutExtension() + ".sav", ".xml");
+    autoSaveFile = lastLocation.getParentDirectory().getChildFile ("autosave.sav.xml");
 
     startTimer (Timers::AutoSave, 10000);
 }
