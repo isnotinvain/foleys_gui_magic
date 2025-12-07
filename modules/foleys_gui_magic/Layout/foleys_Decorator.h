@@ -67,6 +67,7 @@ public:
 
     juce::String getTabCaption (const juce::String& defaultName) const;
     juce::Colour getTabColour() const;
+    juce::Colour getTabTextColour() const;
 
     juce::Colour getBackgroundColour() const;
 
